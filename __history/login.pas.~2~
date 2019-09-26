@@ -1,0 +1,42 @@
+unit login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
+  Vcl.StdCtrls;
+
+type
+  TForm_entrar = class(TForm)
+    Edit_user: TEdit;
+    Label1: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    Edit_senha: TEdit;
+    Label2: TLabel;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Image1: TImage;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_entrar: TForm_entrar;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm_entrar.Button1Click(Sender: TObject);
+var
+login, senha: String;
+begin
+
+end;
+
+end.

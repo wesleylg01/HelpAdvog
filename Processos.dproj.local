@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/10/07 10:44:42.000.484,=C:\Users\Developer Atoa's\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/10/07 10:52:14.000.880,G:\Projetos\Softwarrrrrg\login.dfm=C:\Users\Developer Atoa's\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2016/10/07 10:52:14.000.880,G:\Projetos\Softwarrrrrg\login.pas=C:\Users\Developer Atoa's\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/10/07 10:52:33.000.343,G:\Projetos\Softwarrrrrg\Processos.dproj=C:\Users\Developer Atoa's\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/10/07 10:57:30.000.108,=G:\Projetos\Softwarrrrrg\Unit2.pas</Transaction>
+    <Transaction>2016/10/07 10:58:17.000.697,G:\Projetos\Softwarrrrrg\principal.pas=G:\Projetos\Softwarrrrrg\Unit2.pas</Transaction>
+    <Transaction>2016/10/07 10:58:17.000.697,G:\Projetos\Softwarrrrrg\principal.dfm=G:\Projetos\Softwarrrrrg\Unit2.dfm</Transaction>
+    <Transaction>2016/10/08 18:26:12.000.211,=G:\Projetos\Softwarrrrrg\Unit1.pas</Transaction>
+    <Transaction>2016/10/08 18:29:25.000.888,G:\Projetos\Softwarrrrrg\Unit1.pas=G:\Projetos\Softwarrrrrg\cad_processo.pas</Transaction>
+    <Transaction>2016/10/08 18:29:25.000.888,G:\Projetos\Softwarrrrrg\Unit1.dfm=G:\Projetos\Softwarrrrrg\cad_processo.dfm</Transaction>
+    <Transaction>2016/10/08 23:34:15.000.690,=G:\Projetos\Softwarrrrrg\Unit1.pas</Transaction>
+    <Transaction>2016/10/08 23:35:30.000.572,G:\Projetos\Softwarrrrrg\Unit1.dfm=G:\Projetos\Softwarrrrrg\pesquisa_processo.dfm</Transaction>
+    <Transaction>2016/10/08 23:35:30.000.572,G:\Projetos\Softwarrrrrg\Unit1.pas=G:\Projetos\Softwarrrrrg\pesquisa_processo.pas</Transaction>
+    <Transaction>2016/10/09 13:22:57.000.963,=G:\Projetos\Softwarrrrrg\Unit1.pas</Transaction>
+    <Transaction>2016/10/09 13:46:41.000.009,G:\Projetos\Softwarrrrrg\Unit1.dfm=G:\Projetos\Softwarrrrrg\cad_user.dfm</Transaction>
+    <Transaction>2016/10/09 13:46:41.000.009,G:\Projetos\Softwarrrrrg\Unit1.pas=G:\Projetos\Softwarrrrrg\cad_user.pas</Transaction>
+    <Transaction>2016/10/09 14:15:14.000.951,=G:\Projetos\Softwarrrrrg\Unit1.pas</Transaction>
+    <Transaction>2016/10/09 14:37:33.000.255,G:\Projetos\Softwarrrrrg\Unit1.pas=G:\Projetos\Softwarrrrrg\sobre.pas</Transaction>
+    <Transaction>2016/10/09 14:37:33.000.255,G:\Projetos\Softwarrrrrg\Unit1.dfm=G:\Projetos\Softwarrrrrg\sobre.dfm</Transaction>
+    <Transaction>2016/10/14 22:51:06.000.094,=G:\Projetos\Softwarrrrrg\Unit1.pas</Transaction>
+    <Transaction>2016/10/14 22:51:30.000.045,=G:\Projetos\Softwarrrrrg\Unit1.pas</Transaction>
+    <Transaction>2016/10/14 22:52:49.000.139,G:\Projetos\Softwarrrrrg\datamodule.dfm=G:\Projetos\Softwarrrrrg\Unit1.dfm</Transaction>
+    <Transaction>2016/10/14 22:52:49.000.139,G:\Projetos\Softwarrrrrg\datamodule.pas=G:\Projetos\Softwarrrrrg\Unit1.pas</Transaction>
+    <Transaction>2016/10/26 09:36:32.000.746,=F:\Projetos\Softwarrrrrg\Unit1.pas</Transaction>
+    <Transaction>2016/10/26 09:41:06.000.942,F:\Projetos\Softwarrrrrg\Unit1.pas=F:\Projetos\Softwarrrrrg\Processo_detalhe.pas</Transaction>
+    <Transaction>2016/10/26 09:41:06.000.942,F:\Projetos\Softwarrrrrg\Unit1.dfm=F:\Projetos\Softwarrrrrg\Processo_detalhe.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

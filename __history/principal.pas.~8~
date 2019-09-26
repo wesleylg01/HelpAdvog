@@ -1,0 +1,60 @@
+unit principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls, Vcl.ButtonGroup,
+  Vcl.ImgList;
+
+type
+  TForm_principal = class(TForm)
+    MainMenu1: TMainMenu;
+    Arquivo1: TMenuItem;
+    NovoProcesso1: TMenuItem;
+    PesquisarProcesso1: TMenuItem;
+    VertodososProcessos1: TMenuItem;
+    Arquivo2: TMenuItem;
+    NovoUsurio1: TMenuItem;
+    Contatos1: TMenuItem;
+    Sair1: TMenuItem;
+    ImageList1: TImageList;
+    GroupBox1: TGroupBox;
+    Button1: TButton;
+    Button2: TButton;
+    SuporteSobre1: TMenuItem;
+    procedure Sair1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure NovoProcesso1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_principal: TForm_principal;
+
+implementation
+
+{$R *.dfm}
+
+uses cad_processo;
+
+procedure TForm_principal.Button2Click(Sender: TObject);
+begin
+Form_cadProcesso.ShowModal;
+end;
+
+procedure TForm_principal.NovoProcesso1Click(Sender: TObject);
+begin
+Form_cadProcesso.ShowModal;
+end;
+
+procedure TForm_principal.Sair1Click(Sender: TObject);
+begin
+  if application.MessageBox('Deseja Fechar o Aplicativo ? ' , 'Atenção' , mb_iconquestion + mb_yesno )= id_yes
+     then Application.Terminate;
+end;
+
+end.

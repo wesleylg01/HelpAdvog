@@ -1,0 +1,100 @@
+unit cad_user;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
+  Vcl.ExtCtrls, Vcl.Menus, Vcl.ImgList;
+
+type
+  TForm_cadUser = class(TForm)
+    ImageList1: TImageList;
+    MainMenu1: TMainMenu;
+    Arquivo2: TMenuItem;
+    NovoUsurio1: TMenuItem;
+    Contatos1: TMenuItem;
+    Arquivo1: TMenuItem;
+    NovoProcesso1: TMenuItem;
+    PesquisarProcesso1: TMenuItem;
+    VertodososProcessos1: TMenuItem;
+    Sair1: TMenuItem;
+    Button1: TButton;
+    Button2: TButton;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Edit_nome: TEdit;
+    Edit_tel: TEdit;
+    Edit_cel: TEdit;
+    Edit_email: TEdit;
+    Edit_cpf: TEdit;
+    Label6: TLabel;
+    GroupBox2: TGroupBox;
+    Label5: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Edit1: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Sobre1: TMenuItem;
+    procedure Sair1Click(Sender: TObject);
+    procedure NovoProcesso1Click(Sender: TObject);
+    procedure PesquisarProcesso1Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+    procedure Edit_nomeExit(Sender: TObject);
+    procedure Edit_emailExit(Sender: TObject);
+    procedure Edit_celExit(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_cadUser: TForm_cadUser;
+
+implementation
+
+{$R *.dfm}
+
+uses cad_processo, pesquisa_processo;
+
+procedure TForm_cadUser.Edit_celExit(Sender: TObject);
+begin
+Edit_cpf.SetFocus;
+end;
+
+procedure TForm_cadUser.Edit_emailExit(Sender: TObject);
+begin
+Edit_tel.SetFocus;
+end;
+
+procedure TForm_cadUser.Edit_nomeExit(Sender: TObject);
+begin
+Edit_email.SetFocus;
+end;
+
+procedure TForm_cadUser.FormActivate(Sender: TObject);
+begin
+Edit_nome.SetFocus;
+end;
+
+procedure TForm_cadUser.NovoProcesso1Click(Sender: TObject);
+begin
+form_cadProcesso.showmodal;
+end;
+
+procedure TForm_cadUser.PesquisarProcesso1Click(Sender: TObject);
+begin
+form_pesquisaProcesso.ShowModal;
+end;
+
+procedure TForm_cadUser.Sair1Click(Sender: TObject);
+begin
+Form_cadUser.Close;
+end;
+
+end.

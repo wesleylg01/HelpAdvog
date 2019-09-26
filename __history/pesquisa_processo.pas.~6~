@@ -1,0 +1,66 @@
+unit pesquisa_processo;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage, Vcl.ExtCtrls, Vcl.Menus, Vcl.ImgList;
+
+type
+  TForm_pesquisaProcesso = class(TForm)
+    GroupBox1: TGroupBox;
+    Edit_reu: TEdit;
+    Label1: TLabel;
+    Edit_num: TEdit;
+    Label2: TLabel;
+    Button1: TButton;
+    ImageList1: TImageList;
+    MainMenu1: TMainMenu;
+    Arquivo2: TMenuItem;
+    NovoUsurio1: TMenuItem;
+    Contatos1: TMenuItem;
+    Arquivo1: TMenuItem;
+    NovoProcesso1: TMenuItem;
+    PesquisarProcesso1: TMenuItem;
+    VertodososProcessos1: TMenuItem;
+    Sair1: TMenuItem;
+    Image2: TImage;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    DBGrid1: TDBGrid;
+    Button2: TButton;
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_pesquisaProcesso: TForm_pesquisaProcesso;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm_pesquisaProcesso.FormActivate(Sender: TObject);
+begin
+Edit_reu.SetFocus;
+
+  if RadioButton1.Checked then
+    begin
+      Edit_num.Enabled:= false;
+      Edit_reu.SetFocus;
+    end
+      else if (RadioButton2.Checked) then
+        begin
+
+          Edit_reu.Enabled:= true;
+          Edit_num.Enabled:= false;
+          Edit_reu.SetFocus;
+        end;
+
+end;
+
+end.

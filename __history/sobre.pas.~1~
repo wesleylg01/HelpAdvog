@@ -1,0 +1,45 @@
+unit sobre;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.pngimage, Vcl.ExtCtrls,
+  Vcl.StdCtrls, Vcl.Menus, Vcl.ImgList;
+
+type
+  TForm_tdsProcessos = class(TForm)
+    ImageList1: TImageList;
+    MainMenu1: TMainMenu;
+    Arquivo2: TMenuItem;
+    NovoUsurio1: TMenuItem;
+    Contatos1: TMenuItem;
+    Arquivo1: TMenuItem;
+    NovoProcesso1: TMenuItem;
+    PesquisarProcesso1: TMenuItem;
+    VertodososProcessos1: TMenuItem;
+    Sair1: TMenuItem;
+    Sobre1: TMenuItem;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Image2: TImage;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_tdsProcessos: TForm_tdsProcessos;
+
+implementation
+
+{$R *.dfm}
+
+end.

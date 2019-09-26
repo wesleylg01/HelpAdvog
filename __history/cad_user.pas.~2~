@@ -1,0 +1,57 @@
+unit cad_user;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
+  Vcl.ExtCtrls, Vcl.Menus, Vcl.ImgList;
+
+type
+  TForm_cadUser = class(TForm)
+    ImageList1: TImageList;
+    MainMenu1: TMainMenu;
+    Arquivo2: TMenuItem;
+    NovoUsurio1: TMenuItem;
+    Contatos1: TMenuItem;
+    Arquivo1: TMenuItem;
+    NovoProcesso1: TMenuItem;
+    PesquisarProcesso1: TMenuItem;
+    VertodososProcessos1: TMenuItem;
+    Sair1: TMenuItem;
+    Button1: TButton;
+    Button2: TButton;
+    Image2: TImage;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Edit_peca: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Label6: TLabel;
+    GroupBox2: TGroupBox;
+    Label5: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Edit1: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Image1: TImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_cadUser: TForm_cadUser;
+
+implementation
+
+{$R *.dfm}
+
+end.

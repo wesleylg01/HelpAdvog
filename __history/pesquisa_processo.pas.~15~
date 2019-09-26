@@ -1,0 +1,118 @@
+unit pesquisa_processo;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage, Vcl.ExtCtrls, Vcl.Menus, Vcl.ImgList, Data.DB,
+  ZAbstractRODataset, ZAbstractDataset, ZDataset;
+
+type
+  TForm_pesquisaProcesso = class(TForm)
+    GroupBox1: TGroupBox;
+    Edit_reu: TEdit;
+    Label1: TLabel;
+    Edit_num: TEdit;
+    Label2: TLabel;
+    Button1: TButton;
+    ImageList1: TImageList;
+    MainMenu1: TMainMenu;
+    Arquivo2: TMenuItem;
+    NovoUsurio1: TMenuItem;
+    Contatos1: TMenuItem;
+    Arquivo1: TMenuItem;
+    NovoProcesso1: TMenuItem;
+    PesquisarProcesso1: TMenuItem;
+    Sair1: TMenuItem;
+    Image2: TImage;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    DBGrid1: TDBGrid;
+    Button2: TButton;
+    Sobre1: TMenuItem;
+    DataSource1: TDataSource;
+    ZQuery1: TZQuery;
+    procedure FormActivate(Sender: TObject);
+    procedure RadioButton2Click(Sender: TObject);
+    procedure RadioButton1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
+    procedure NovoProcesso1Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_pesquisaProcesso: TForm_pesquisaProcesso;
+
+implementation
+
+{$R *.dfm}
+
+uses cad_processo;
+
+procedure TForm_pesquisaProcesso.Button1Click(Sender: TObject);
+begin
+if RadioButton1.Checked = true then
+   begin
+      ZQuery1.Close;
+      ZQuery1.SQL.Clear;
+      ZQuery1.SQL.Add('Select * from processo Where (reu like "%'+ Edit_reu.Text +'%")');
+      ZQuery1.Open;
+   end;
+end;
+
+procedure TForm_pesquisaProcesso.Button2Click(Sender: TObject);
+begin
+  if RadioButton1.Checked = true then
+    begin
+      Edit_reu.Clear;
+    end
+      else
+      begin
+        Edit_num.Clear;
+      end;
+end;
+
+procedure TForm_pesquisaProcesso.FormActivate(Sender: TObject);
+begin
+Edit_reu.SetFocus;
+
+ZQuery1.Close;
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('SELECT * FROM processo');
+ZQuery1.Open;
+
+end;
+
+procedure TForm_pesquisaProcesso.NovoProcesso1Click(Sender: TObject);
+begin
+form_cadProcesso.ShowModal;
+end;
+
+procedure TForm_pesquisaProcesso.RadioButton1Click(Sender: TObject);
+begin
+          Edit_reu.Enabled:= true;
+          Edit_num.Enabled:= false;
+          Edit_reu.SetFocus;
+end;
+
+procedure TForm_pesquisaProcesso.RadioButton2Click(Sender: TObject);
+begin
+          Edit_reu.Enabled:= false;
+          Edit_num.Enabled:= true;
+          Edit_num.SetFocus;
+
+end;
+
+procedure TForm_pesquisaProcesso.Sair1Click(Sender: TObject);
+begin
+Form_pesquisaProcesso.Close;
+RadioButton1.Checked:= true;
+end;
+
+end.
